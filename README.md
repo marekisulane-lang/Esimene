@@ -1,22 +1,19 @@
-# Koduleht
+# Fercraft OÜ koduleht
 
-Lihtne isiklik koduleht (HTML + CSS + JavaScript, ilma raamistiketa).
+CNC metallilõiketöötluse ettevõtte Fercraft OÜ koduleht (HTML + CSS + JavaScript, ilma raamistiketa).
 
 ## Failid
 
-- `index.html` – lehe sisu (tekstid, sektsioonid)
-- `style.css` – kujundus, sh hele ja tume teema
-- `script.js` – teema vahetus, mobiilimenüü, ilmumisanimatsioon
+- `index.html` – lehe sisu
+- `style.css` – kujundus
+- `script.js` – mobiilimenüü ja ilmumisanimatsioon
+- `img/logo.png`, `img/logo-white.png` – logo (sinine ja valge)
 
-## Kuidas muuta
+## Enne avaldamist muuda
 
-Ava `index.html` ja asenda näidistekstid oma tekstidega. Kontaktivormi jaoks muuda
-`action="mailto:sinu.email@näide.ee"` oma e-posti aadressiks. Pildi lisamiseks projektile
-asenda `<div class="project-thumb t1"></div>` näiteks `<img class="project-thumb" src="pilt.jpg" alt="">`.
+Failis `index.html` (otsi kommentaari `MUUDA`):
+- e-post (`info@fercraft.ee` – ka vormi `action` real), telefon ja aadress
 
 ## Avaldamine GitHub Pagesis
 
-1. GitHubis: **Settings → Pages**
-2. **Source**: *Deploy from a branch*, haru `master`, kaust `/ (root)`
-3. Salvesta — leht ilmub mõne minuti pärast aadressil
-   `https://marekisulane-lang.github.io/esimene/`
+Settings → Pages → *Deploy from a branch* → haru `master`, kaust `/ (root)`.

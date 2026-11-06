@@ -3,137 +3,156 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marek — Koduleht</title>
-  <meta name="description" content="Marek isiklik koduleht: minust, tegemised ja kontakt.">
+  <title>Fercraft OÜ — CNC metallilõiketöötlus</title>
+  <meta name="description" content="Fercraft OÜ — CNC metallilõiketöötlus. Detailid alates ühest tükist kuni suuremahulise seeriatootmiseni.">
+  <link rel="icon" href="img/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#" class="logo">Marek<span>.</span></a>
+      <a href="#" class="logo" aria-label="Fercraft avaleht">
+        <img src="img/logo.png" alt="Fercraft — CNC metallilõiketöötlus">
+      </a>
       <button class="menu-toggle" aria-label="Ava menüü" aria-expanded="false">
         <span></span><span></span>
       </button>
       <nav class="nav-links">
-        <a href="#minust">Minust</a>
-        <a href="#tegevused">Tegevused</a>
-        <a href="#projektid">Projektid</a>
-        <a href="#kontakt" class="btn btn-small">Võta ühendust</a>
-        <button class="theme-toggle" aria-label="Vaheta teemat" title="Vaheta teemat">◐</button>
+        <a href="#teenused">Teenused</a>
+        <a href="#seeriad">Seeriatootmine</a>
+        <a href="#protsess">Kuidas tellida</a>
+        <a href="#kontakt" class="btn btn-small">Küsi pakkumist</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- AVAPLOKK -->
     <section class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <p class="eyebrow">Tere tulemast!</p>
-        <h1>Tere, mina olen <span class="accent">Marek</span>.</h1>
+        <p class="eyebrow light">CNC metallilõiketöötlus</p>
+        <h1>Täpsed metallidetailid<br><span class="outline">ühest tükist</span> seeriani.</h1>
         <p class="lead">
-          Siin on lühike tutvustus sellest, kes ma olen, millega tegelen ja kuidas minuga
-          ühendust saada. Muuda seda teksti vastavalt oma soovile.
+          Fercraft OÜ valmistab metallidetaile CNC lõiketöötluse abil — olgu vaja üksikut
+          prototüüpi, väikeseeriat või suuremahulist tootmist.
         </p>
         <div class="hero-actions">
-          <a href="#projektid" class="btn">Vaata minu töid</a>
-          <a href="#kontakt" class="btn btn-ghost">Kirjuta mulle</a>
+          <a href="#kontakt" class="btn btn-light">Küsi pakkumist</a>
+          <a href="#seeriad" class="btn btn-ghost-light">Vaata võimekust</a>
         </div>
+        <dl class="hero-stats">
+          <div><dt>1 tk</dt><dd>alates ühest detailist</dd></div>
+          <div><dt>1–500+</dt><dd>väike- kuni suurseeria</dd></div>
+          <div><dt>CNC</dt><dd>täpne ja korratav tootmine</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section id="minust" class="section">
-      <div class="container two-col">
-        <div>
-          <p class="eyebrow">Minust</p>
-          <h2>Natuke minu taustast</h2>
-        </div>
-        <div class="prose">
-          <p>
-            Kirjuta siia paar lõiku enda kohta — kust sa pärit oled, mida õppinud oled
-            ja mis sind igapäevaselt motiveerib.
-          </p>
-          <p>
-            Hea tutvustus on lühike ja isiklik. Lisa näiteks oma hobid, lemmikteemad
-            või see, mida praegu õpid.
-          </p>
-          <ul class="facts">
-            <li><strong>Asukoht</strong><span>Eesti</span></li>
-            <li><strong>Huvid</strong><span>Tehnoloogia, disain, sport</span></li>
-            <li><strong>Keeled</strong><span>Eesti, inglise</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="tegevused" class="section section-alt">
+    <!-- TEENUSED -->
+    <section id="teenused" class="section">
       <div class="container">
-        <p class="eyebrow">Tegevused</p>
-        <h2>Millega ma tegelen</h2>
+        <div class="section-head">
+          <p class="eyebrow">Teenused</p>
+          <h2>Mida me teeme</h2>
+          <p class="lead dark">Toome sinu joonise või idee ellu valmis metalldetailina.</p>
+        </div>
         <div class="cards">
           <article class="card">
-            <div class="card-icon">✦</div>
-            <h3>Esimene valdkond</h3>
-            <p>Lühike kirjeldus sellest, mida selles valdkonnas teed ja miks see sulle oluline on.</p>
+            <div class="card-num">01</div>
+            <h3>CNC lõiketöötlus</h3>
+            <p>Metalldetailide valmistamine CNC-pinkidel täpselt vastavalt joonisele ja nõuetele.</p>
           </article>
           <article class="card">
-            <div class="card-icon">◆</div>
-            <h3>Teine valdkond</h3>
-            <p>Siia sobib näiteks töö, õpingud, vabatahtlik tegevus või mõni pikem huviala.</p>
+            <div class="card-num">02</div>
+            <h3>Prototüübid ja üksikdetailid</h3>
+            <p>Paindlik tootmine alates ühest detailist — sobib prototüüpideks, varuosadeks ja eritellimusteks.</p>
           </article>
           <article class="card">
-            <div class="card-icon">●</div>
-            <h3>Kolmas valdkond</h3>
-            <p>Hoia tekst lühike — kaks-kolm lauset on täiesti piisav.</p>
+            <div class="card-num">03</div>
+            <h3>Seeriatootmine</h3>
+            <p>Väike-, keskmise ja suure seeria tootmine ühtlase kvaliteedi ja korratavusega.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="projektid" class="section">
+    <!-- SEERIAD -->
+    <section id="seeriad" class="section section-dark">
       <div class="container">
-        <p class="eyebrow">Projektid</p>
-        <h2>Valik minu töid</h2>
-        <div class="projects">
-          <a class="project" href="#">
-            <div class="project-thumb t1"></div>
-            <div class="project-body">
-              <h3>Projekti nimi</h3>
-              <p>Mis see on ja mida sa selle juures tegid.</p>
-              <span class="tag">2026</span>
-            </div>
-          </a>
-          <a class="project" href="#">
-            <div class="project-thumb t2"></div>
-            <div class="project-body">
-              <h3>Teine projekt</h3>
-              <p>Lisa link, kui projekt on kuskil veebis näha.</p>
-              <span class="tag">2025</span>
-            </div>
-          </a>
-          <a class="project" href="#">
-            <div class="project-thumb t3"></div>
-            <div class="project-body">
-              <h3>Kolmas projekt</h3>
-              <p>Pilte saad lisada, asendades värvilise ploki &lt;img&gt; sildiga.</p>
-              <span class="tag">2024</span>
-            </div>
-          </a>
+        <div class="section-head">
+          <p class="eyebrow light">Seeriatootmine</p>
+          <h2>Väike-, keskmise ja suure seeria tootmine</h2>
+          <p class="lead">
+            Fercrafti võimekus sobib eriti hästi väikese ja keskmise seeria tootmiseks.
+            Oleme paindlikud — valmistame alates ühest detailist kuni suuremate seeriateni.
+          </p>
+        </div>
+        <div class="tiers">
+          <article class="tier">
+            <p class="tier-label">Väikeseeria</p>
+            <p class="tier-qty">1–50<span>tk</span></p>
+            <p>Prototüübid, üksikdetailid ja väikesed partiid kiire reageerimisega.</p>
+            <div class="bar"><i style="--w:22%"></i></div>
+          </article>
+          <article class="tier featured">
+            <p class="tier-label">Keskmine seeria</p>
+            <p class="tier-qty">50–500<span>tk</span></p>
+            <p>Stabiilne ja korratav tootmine regulaarsetele tellimustele.</p>
+            <div class="bar"><i style="--w:58%"></i></div>
+          </article>
+          <article class="tier">
+            <p class="tier-label">Suuremahuline seeria</p>
+            <p class="tier-qty">500+<span>tk</span></p>
+            <p>Suuremad kogused ühtlase kvaliteediga.</p>
+            <div class="bar"><i style="--w:100%"></i></div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="kontakt" class="section section-alt">
+    <!-- PROTSESS -->
+    <section id="protsess" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Kuidas tellida</p>
+          <h2>Joonisest valmis detailini</h2>
+        </div>
+        <ol class="steps">
+          <li><span>1</span><h3>Saada joonis</h3><p>Saada meile detaili joonis või kirjeldus ning soovitud kogus.</p></li>
+          <li><span>2</span><h3>Saad pakkumise</h3><p>Vaatame tellimuse üle ja saadame hinnapakkumise ning tähtaja.</p></li>
+          <li><span>3</span><h3>Tootmine</h3><p>Valmistame detailid CNC lõiketöötlusega vastavalt kokkulepitule.</p></li>
+          <li><span>4</span><h3>Üleandmine</h3><p>Valmis detailid jõuavad sinuni kokkulepitud ajal.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section">
       <div class="container contact">
-        <p class="eyebrow">Kontakt</p>
-        <h2>Räägime!</h2>
-        <p class="lead">Kui sul on küsimusi või ettepanekuid, kirjuta julgelt.</p>
-        <form class="contact-form" action="mailto:sinu.email@näide.ee" method="post" enctype="text/plain">
-          <label>Nimi<input type="text" name="nimi" required></label>
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2>Küsi pakkumist</h2>
+          <p class="lead dark">Kirjelda, mida vajad, ja lisa võimalusel joonis. Vastame esimesel võimalusel.</p>
+          <ul class="contact-list">
+            <!-- MUUDA: lisa õiged kontaktandmed -->
+            <li><strong>Ettevõte</strong><span>Fercraft OÜ</span></li>
+            <li><strong>E-post</strong><a href="mailto:info@fercraft.ee">info@fercraft.ee</a></li>
+            <li><strong>Telefon</strong><a href="tel:+3720000000">+372 0000 0000</a></li>
+            <li><strong>Aadress</strong><span>Tänav 1, Linn, Eesti</span></li>
+          </ul>
+        </div>
+        <form class="contact-form" action="mailto:info@fercraft.ee" method="post" enctype="text/plain">
+          <label>Nimi / ettevõte<input type="text" name="nimi" required></label>
           <label>E-post<input type="email" name="email" required></label>
-          <label class="full">Sõnum<textarea name="sonum" rows="5" required></textarea></label>
-          <button type="submit" class="btn full">Saada sõnum</button>
+          <label>Telefon<input type="tel" name="telefon"></label>
+          <label>Kogus (tk)<input type="text" name="kogus" placeholder="nt 50"></label>
+          <label class="full">Kirjeldus<textarea name="kirjeldus" rows="5" required placeholder="Materjal, mõõdud, tähtaeg…"></textarea></label>
+          <button type="submit" class="btn full">Saada päring</button>
+          <p class="form-note full">Joonise saad lisada e-kirjale, mis avaneb pärast saatmist.</p>
         </form>
       </div>
     </section>
@@ -141,7 +160,8 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Marek. Kõik õigused kaitstud.</p>
+      <img src="img/logo-white.png" alt="Fercraft" class="footer-logo">
+      <p>© <span id="year"></span> Fercraft OÜ · CNC metallilõiketöötlus</p>
       <a href="#">Tagasi üles ↑</a>
     </div>
   </footer>

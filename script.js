@@ -1,21 +1,6 @@
 // Aasta jaluses
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Hele/tume teema (meelde jäetakse brauseris)
-const root = document.documentElement;
-const getStored = () => { try { return localStorage.getItem('theme'); } catch { return null; } };
-const setStored = (v) => { try { localStorage.setItem('theme', v); } catch {} };
-
-const initial = getStored() ||
-  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-root.dataset.theme = initial;
-
-document.querySelector('.theme-toggle').addEventListener('click', () => {
-  const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
-  root.dataset.theme = next;
-  setStored(next);
-});
-
 // Mobiilimenüü
 const toggle = document.querySelector('.menu-toggle');
 const links = document.querySelector('.nav-links');
@@ -28,8 +13,8 @@ links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   toggle.setAttribute('aria-expanded', 'false');
 }));
 
-// Sektsioonide sujuv ilmumine kerimisel
-const els = document.querySelectorAll('.section .container > *');
+// Sujuv ilmumine kerimisel
+const els = document.querySelectorAll('.section-head, .cards > *, .tiers > *, .steps > *, .contact > *');
 els.forEach(el => el.classList.add('reveal'));
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => {
