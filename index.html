@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marek — Koduleht</title>
+  <meta name="description" content="Marek isiklik koduleht: minust, tegemised ja kontakt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">Marek<span>.</span></a>
+      <button class="menu-toggle" aria-label="Ava menüü" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#minust">Minust</a>
+        <a href="#tegevused">Tegevused</a>
+        <a href="#projektid">Projektid</a>
+        <a href="#kontakt" class="btn btn-small">Võta ühendust</a>
+        <button class="theme-toggle" aria-label="Vaheta teemat" title="Vaheta teemat">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Tere tulemast!</p>
+        <h1>Tere, mina olen <span class="accent">Marek</span>.</h1>
+        <p class="lead">
+          Siin on lühike tutvustus sellest, kes ma olen, millega tegelen ja kuidas minuga
+          ühendust saada. Muuda seda teksti vastavalt oma soovile.
+        </p>
+        <div class="hero-actions">
+          <a href="#projektid" class="btn">Vaata minu töid</a>
+          <a href="#kontakt" class="btn btn-ghost">Kirjuta mulle</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="minust" class="section">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Minust</p>
+          <h2>Natuke minu taustast</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Kirjuta siia paar lõiku enda kohta — kust sa pärit oled, mida õppinud oled
+            ja mis sind igapäevaselt motiveerib.
+          </p>
+          <p>
+            Hea tutvustus on lühike ja isiklik. Lisa näiteks oma hobid, lemmikteemad
+            või see, mida praegu õpid.
+          </p>
+          <ul class="facts">
+            <li><strong>Asukoht</strong><span>Eesti</span></li>
+            <li><strong>Huvid</strong><span>Tehnoloogia, disain, sport</span></li>
+            <li><strong>Keeled</strong><span>Eesti, inglise</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="tegevused" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">Tegevused</p>
+        <h2>Millega ma tegelen</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">✦</div>
+            <h3>Esimene valdkond</h3>
+            <p>Lühike kirjeldus sellest, mida selles valdkonnas teed ja miks see sulle oluline on.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">◆</div>
+            <h3>Teine valdkond</h3>
+            <p>Siia sobib näiteks töö, õpingud, vabatahtlik tegevus või mõni pikem huviala.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">●</div>
+            <h3>Kolmas valdkond</h3>
+            <p>Hoia tekst lühike — kaks-kolm lauset on täiesti piisav.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projektid" class="section">
+      <div class="container">
+        <p class="eyebrow">Projektid</p>
+        <h2>Valik minu töid</h2>
+        <div class="projects">
+          <a class="project" href="#">
+            <div class="project-thumb t1"></div>
+            <div class="project-body">
+              <h3>Projekti nimi</h3>
+              <p>Mis see on ja mida sa selle juures tegid.</p>
+              <span class="tag">2026</span>
+            </div>
+          </a>
+          <a class="project" href="#">
+            <div class="project-thumb t2"></div>
+            <div class="project-body">
+              <h3>Teine projekt</h3>
+              <p>Lisa link, kui projekt on kuskil veebis näha.</p>
+              <span class="tag">2025</span>
+            </div>
+          </a>
+          <a class="project" href="#">
+            <div class="project-thumb t3"></div>
+            <div class="project-body">
+              <h3>Kolmas projekt</h3>
+              <p>Pilte saad lisada, asendades värvilise ploki &lt;img&gt; sildiga.</p>
+              <span class="tag">2024</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section section-alt">
+      <div class="container contact">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Räägime!</h2>
+        <p class="lead">Kui sul on küsimusi või ettepanekuid, kirjuta julgelt.</p>
+        <form class="contact-form" action="mailto:sinu.email@näide.ee" method="post" enctype="text/plain">
+          <label>Nimi<input type="text" name="nimi" required></label>
+          <label>E-post<input type="email" name="email" required></label>
+          <label class="full">Sõnum<textarea name="sonum" rows="5" required></textarea></label>
+          <button type="submit" class="btn full">Saada sõnum</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Marek. Kõik õigused kaitstud.</p>
+      <a href="#">Tagasi üles ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
