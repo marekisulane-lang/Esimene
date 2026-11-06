@@ -12,7 +12,7 @@ CNC metallilõiketöötluse ettevõtte Fercraft OÜ koduleht (HTML + CSS + JavaS
 ## Enne avaldamist muuda
 
 Failis `index.html` (otsi kommentaari `MUUDA`):
-- e-post (`info@fercraft.ee` – ka vormi `action` real), telefon ja aadress
+- e-post (`info@fercraft.ee` – ka vormi `action` real) on kinnitamata; telefon, aadress, registrikood ja KMKR on võetud registriandmetest
 
 ## Avaldamine GitHub Pagesis
 
